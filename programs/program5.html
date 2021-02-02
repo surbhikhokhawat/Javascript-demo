@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>PROGRAM 5</h2>
+<p>JavaScript Program to Generate a Range of Numbers and Characters</p>
+
+<p id="demo"></p>
+
+<script>
+    function randomString() {
+        var chars = "6154761583654186lsyfugbyefkqxyegy";
+        var string_length = 5;
+        var randomstring = '';
+        for (var i=0; i<string_length; i++) {
+            var rnum = Math.floor(Math.random() * chars.length);
+            randomstring += chars.substring(rnum,rnum+1);
+        }
+        document.getElementById("demo").innerHTML = randomstring;
+    }
+    </script>
+    <form name="form">
+        <input type="button" value="Create Random String" onClick="randomString();">&nbsp;
+        <input type="text" name="randomfield" value="">
+        </form>
+</body>
+</html>

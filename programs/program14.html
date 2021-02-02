@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>PROGRAM 14</h2>
+        <p>JavaScript Program to Empty an Array</p>
+        <p>Click the button to remove the last element from the array.</p>
+        <button onclick="myFunction()">Click here!</button>
+        <p id="demo"></p>
+        <script>
+            var names = ["Surbhi", "Devyani", "Twinkle", "Kinjal"];
+            document.getElementById("demo").innerHTML = names;
+
+            function myFunction() {
+                // .pop() is the main method which will remove one by one name 
+                names.pop();
+                document.getElementById("demo").innerHTML = names;
+            }
+        </script>
+
+    </body>
+</html>

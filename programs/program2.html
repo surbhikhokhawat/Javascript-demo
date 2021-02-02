@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>PROGRAM 2</h2>
+<p>Javascript Program to Generate a Random Number Between Two Numbers</p>
+
+<p>Return a random number between 1  and 5 :</p>
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = Math.floor((Math.random() * 5) + 1);
+//   Math function returns a random number (just for my knwoledge)
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html>

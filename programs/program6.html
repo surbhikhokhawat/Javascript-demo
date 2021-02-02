@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>PROGRAM 6</h1>
+               <p>JavaScript Program to Check if a Number is Float or Integer</p>  
+               <p>Click the button to check if a Number is Float or Integer</p>
+               <p id = "demo"></p>
+               <button onclick="myFunction()">click me</button>
+
+     <script>
+       function myFunction() {
+       var xyz = "";
+    //    The Number.isInteger() is the main method/function .
+       xyz = xyz + Number.isInteger(123) + ": 123<br>";
+       xyz = xyz + Number.isInteger(-123) + ": -123<br>";
+       xyz = xyz + Number.isInteger(Infinity) + ": Infinity<br>";
+       xyz = xyz + Number.isInteger(-Infinity) + ": -Infinity<br>";
+
+         document.getElementById("demo").innerHTML = xyz;
+       }
+     </script>
+    </body>
+</html>

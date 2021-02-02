@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>PROGRAM 12</h2>
+        <p>JavaScript Program to Append an Object to An Array</p>
+        <p>i want to remove an element in the given array</p>
+        <button onclick="myFunction()">Click here!</button>
+        <p id="demo"></p>
+                <script>
+                    var colours = ["Blue", "Orange", "Pink", "Yellow"];
+                    document.getElementById("demo").innerHTML = colours;
+                    function myFunction() {
+                        // .push() is the main method here which will add colour at the end of the array
+                    colours.push("Green");
+                    document.getElementById("demo").innerHTML = colours;
+                    }
+                </script>
+    </body>
+</html>

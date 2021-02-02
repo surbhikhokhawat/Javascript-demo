@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+        <h2>PROGRAM 9</h2>
+         <p>Remove Specific Item From an Array</p>  
+         <button onclick="MyFunction()">click me</button>      
+        <script>
+            function MyFunction() {
+            var arr = [2, 5, 9];
+            alert(arr);
+            // indexof() will show the position 
+            const index = arr.indexOf(5);
+            // (index > -1) will take you to the before position
+            if (index > -1) {
+                // splice(index,whatver) will remove whatever you want to
+            arr.splice(index, 1);
+            }
+            alert(arr); 
+            }
+        </script>
+  </body>
+</html>

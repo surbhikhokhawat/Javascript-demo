@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+     <body>
+         <h2>PROGRAM 4</h2>
+         <p>JavaScript Program to Validate an Email</p>
+         <button onclick="checkEmail()">Click here!</button> 
+         <p id="demo"></p>
+         <script>
+              function checkEmail() {
+        var email = prompt("Enter your E-mail")
+        var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;    
+        if (!filter.test(email)) {
+        alert('Invalid email');
+        }
+        else{
+            alert('valid email')
+        }
+    }
+    checkEmail();
+    document.getElementById("demo").innerHTML = email;
+            </script>
+     </body>
+</html>
+
+

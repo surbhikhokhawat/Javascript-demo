@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+        <body>
+            <h2>PROGRAM 14</h2>
+            <p>JavaScript Program to Empty an Array</p>
+            <p>Click the button to remove the last element from the array.</p>
+            <button onclick="getUnique(arr)">Click here!</button>
+            <p id="demo"></p>
+            <script>
+                function getUnique(arr) {
+                    arr = [...new Set(arr)]
+                    alert(arr)
+                    document.getElementById("demo").innerHTML = uniqueArr;
+                }
+                const array = [1, 2, 3, 2, 3, 1, 1, 4];
+                getUnique(array);
+                document.getElementById("demo").innerHTML = arr;
+            </script>
+        </body>
+</html>

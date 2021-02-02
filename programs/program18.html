@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+     <body>
+         <h2>PROGRAM 18</h2>
+         <p>JavaScript Program to Format Numbers as Currency Strings</p>
+         <button onclick="myFunction()">Click here!</button> 
+         <p id="demo"></p>
+         <script>
+              let currency= 5000
+    const result =  currency.toLocaleString('en-IN', {
+    style: 'currency',
+    currency: 'INR'
+});
+alert(result);
+document.getElementById("demo").innerHTML = currency;
+
+
+
+
+
+         </script>
+     </body>
+</html>

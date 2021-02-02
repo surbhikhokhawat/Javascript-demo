@@ -1,8 +1,27 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>this is my first program</title>
-    </head>
     <body>
-        <h1>this is program 1</h1>
+        <h1>PROGRAM 1</h1>
+            <p>how-to-check-for-an-undefined-or-null-variable-in-javascript</p>
+
+            <p>Click the button to test if a variable is undefined.</p>
+
+             <button onclick="myFunction()">Try it</button>
+
+               <p id="demo"></p>
+
+        <script>
+         function myFunction() {
+         var x;
+
+          if (typeof x === "undefined") {
+             txt = "x is undefined";
+          } 
+          else {
+              txt = "x is defined";
+          }
+            document.getElementById("demo").innerHTML = txt;
+          }
+        </script>
     </body>
 </html>
