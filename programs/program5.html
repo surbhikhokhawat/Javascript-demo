@@ -5,23 +5,31 @@
 <h2>PROGRAM 5</h2>
 <p>JavaScript Program to Generate a Range of Numbers and Characters</p>
 
-<p id="demo"></p>
+
+<div class="form-group">
+    <label for="numb">Enter your string</label>
+    <input type="text" class="form-control" id="string" required>
+    <label for="numb">Enter your string length</label>
+    <input type="number" class="form-control" id="string-ln" required>
+</div>
+<button type="submit" onclick="randomString() " class="btn btn-default">check</button>
+<h1 id="result"></h1>
+<p> result: <span id="demo"></span></p>
+</div>
+
 
 <script>
     function randomString() {
-        var chars = "6154761583654186lsyfugbyefkqxyegy";
-        var string_length = 5;
+        var string = document.getElementById("string").value;
+        var string_length = parseInt(document.getElementById("string-ln").value);
         var randomstring = '';
         for (var i=0; i<string_length; i++) {
-            var rnum = Math.floor(Math.random() * chars.length);
-            randomstring += chars.substring(rnum,rnum+1);
+            var rnum = Math.floor(Math.random() * string.length);
+            randomstring += string.substring(rnum,rnum+1);
         }
         document.getElementById("demo").innerHTML = randomstring;
     }
     </script>
-    <form name="form">
-        <input type="button" value="Create Random String" onClick="randomString();">&nbsp;
-        <input type="text" name="randomfield" value="">
-        </form>
+  
 </body>
 </html>

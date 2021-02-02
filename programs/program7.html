@@ -2,19 +2,25 @@
 <html>
 <body>
     <h1>PROGRAM 7</h1>
-    <p>Javascript program to remove white spaces from a text</p>
+    <p>Javascript program to remove all white spaces from a text</p>
 
 <p>Click the button to see your output</p>
 
-<button onclick="myFunction()">Try it</button>
+
+<div class = "form" >
+    <label for="numb">Enter text</label>
+    <input type="text" id="numb" required> 
+    <button onclick="myFunction()">Click</button>
+</div>
+<h4>Result: <span id="demo"></span></h4>
 
 <!-- The trim() method is main function here.-->
 
 <script>
 function myFunction() {
-  var str = "     Hello    MY NAME IS SURBHI   KHOKHAWAT     ";
+    var str = document.getElementById('numb').value;
 //   str.replace(/\s/g,'') is the main function here s
-  alert(str.replace(/\s/g,''));
+  document.getElementById('demo').innerHTML=str.replace(/\s/g,'');
 }
 </script>
 

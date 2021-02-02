@@ -4,14 +4,20 @@
 <h1>PROGRAM 8</h1>
 <p>JavaScript Program to Convert Date to Number</p>
 <p>Click the button.</p>
-
-<button onclick="myFunction()">Try it</button>
+<div class="form-group">
+    <label for="numb">Enter Date</label>
+    <input type="date" class="form-control" id="numb" required>
+</div>
+<button type="submit" onclick="myFunction()" class="btn btn-default">check</button>
+<h4 >result: <span id="result"></span></h4>
+</div>
 
 <p id="demo"></p>
 
 <script>
 function myFunction() {
-  var d = Date.parse("November 19, 1999");
+    var date = document.getElementById('numb').value;
+  var d = Date.parse(date);
   document.getElementById("demo").innerHTML = d;
 }
 </script>

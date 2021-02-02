@@ -6,19 +6,24 @@
 
             <p>Click the button to test if a variable is undefined.</p>
 
-             <button onclick="myFunction()">Try it</button>
-
                <p id="demo"></p>
+               <div class="form-group">
+                <label for="numb">Enter a text</label>
+                <input type="text" class="form-control" id="numb" required>
+            </div>
+           <button type="submit" onclick="myFunction()" class="btn btn-default">check</button>
+           <h1 id="result"></h1>
+        </div>
 
         <script>
          function myFunction() {
-         var x;
+             var x=parseInt(document.getElementById("numb").value)
 
           if (typeof x === "undefined") {
-             txt = "x is undefined";
+             txt = x+"is undefined";
           } 
           else {
-              txt = "x is defined";
+              txt = x+" is defined";
           }
             document.getElementById("demo").innerHTML = txt;
           }
