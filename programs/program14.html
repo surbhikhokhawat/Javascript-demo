@@ -3,18 +3,26 @@
     <body>
         <h2>PROGRAM 14</h2>
         <p>JavaScript Program to Empty an Array</p>
-        <p>Click the button to remove the last element from the array.</p>
-        <button onclick="myFunction()">Click here!</button>
+        <p>Click the button to see if the array is undefined</p>
+        <p>if the result is undefined, means array is deleted</p>
         <p id="demo"></p>
+        <div class="form-group">
+        <label for="numb">enter to see the removed element</label>
+        <input type="text" class="form-control" id="numb" required>
+    <button type="submit" onclick="myFunction()" class="btn btn-default">check</button>
+    <h4>result: <span id="result"></span></h4>
+    </div>
         <script>
-            var names = ["Surbhi", "Devyani", "Twinkle", "Kinjal"];
-            document.getElementById("demo").innerHTML = names;
-
+            var arr1 = ["Surbhi", "Devyani", "Twinkle", "Kinjal"];
+            document.getElementById("demo").innerHTML = arr1;
             function myFunction() {
-                // .pop() is the main method which will remove one by one name 
-                names.pop();
-                document.getElementById("demo").innerHTML = names;
+                var n = document.getElementById('numb').value;
+                var arr2 = arr1; 
+                arr1 = [];
+                 var a = console.log(arr2);
+                document.getElementById("result").innerHTML = a;
             }
+
         </script>
 
     </body>
