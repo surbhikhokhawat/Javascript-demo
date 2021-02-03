@@ -3,14 +3,21 @@
      <body>
          <h2>PROGRAM 17</h2>
          <p>JavaScript Program to Merge Two Arrays and Remove Duplicate Items</p>
-         <button onclick="myFunction()">Click here!</button> 
          <p id="demo"></p>
+         <div class="form-group">
+            <label for="numb">click too see merged array</label>
+            <input type="text" class="form-control" id="numb" required>
+        <button type="submit" onclick="myFunction()" class="btn btn-default">check</button>
+        <h4>result: <span id="result"></span></h4>
+        </div>
             <script>
                 function myFunction() {
                     var colours = ["orange", "yellow", "Purple"];
                     var fruits = ["Papaya", "Banana", "Grapes"];
+                    var n = document.getElementById("numb").value;
                     // array1.concat(array2) i.i. concat is the main function to add two arrays 
                     var children = colours.concat(fruits);
+                    document.getElementById('numb').value;
                     document.getElementById("demo").innerHTML = children;
                 }
             </script>
