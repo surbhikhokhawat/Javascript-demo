@@ -3,14 +3,21 @@
     <body>
         <h2>PROGRAM 11</h2>
         <p>JavaScript Program to Insert Item in an Array</p>
-        <p>i want to add an element in the given array</p>
-        <button onclick="myFunction()">click me</button>
+        <p>i want to add an element in the given array "A,B,C,D,E"</p>
+        <div class="form-group">
+            <label for="numb">Enter element</label>
+            <input type="text" class="form-control" id="numb" required>
+        </div>
+        <button type="submit" onclick="myFunction()" class="btn btn-default">check</button>
+        <h4 >result: <span id="result"></span></h4>
+        </div>
         <p id="demo"></p>
         <script>
             function myFunction() {
+                var n = document.getElementById('numb').value;
                 var arr = ["A", "B", "C", "D", "E"];
                 console.log(arr.join());
-                arr.splice(3, 0, "20");
+                arr.push(n);
                 // log(arr.join()) is the main method which will add 
                 console.log(arr.join());
                 document.getElementById("demo").innerHTML = arr;
