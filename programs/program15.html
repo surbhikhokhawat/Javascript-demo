@@ -3,17 +3,22 @@
     <body>
         <h2>PROGRAM 14</h2>
         <p>JavaScript Program to Add Element to Start of an Array</p>
-        <button onclick="myFunction()">Click here!</button>
         <p id="demo"></p>
+        <div class="form-group">
+            <label for="numb">Enter Element</label>
+            <input type="text" class="form-control" id="numb" required>
+        <button type="submit" onclick="myFunction()" class="btn btn-default">check</button>
+        <h4>result: <span id="result"></span></h4>
+        </div>
         <script>
-            var numbers = ["1", "2", "3", "4", "5", "6"];
-            document.getElementById("demo").innerHTML = numbers;
-
             function myFunction() {
-                // .unshift() is the main function here which will add elements in the starting
-                numbers.unshift("2", "4");
-                document.getElementById("demo").innerHTML = numbers;
-            }
+                var numbers = ["1", "2", "3", "4", "5", "6"];
+                var n = document.getElementById("numb").value;
+                var a = numbers.unshift(n);
+                     // .unshift() is the main function here which will add elements in the starting
+               document.getElementById('numb').value;
+                document.getElementById("result").innerHTML = numbers;
+                }
         </script>
     </body>
 </html>
