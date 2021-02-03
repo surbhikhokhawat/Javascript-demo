@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <h2>PROGRAM 12</h2>
-        <p>JavaScript Program to Append an Object to An Array</p>
-        <p>i want to remove an element in the given array</p>
-        <button onclick="myFunction()">Click here!</button>
-        <p id="demo"></p>
-                <script>
-                    var colours = ["Blue", "Orange", "Pink", "Yellow"];
-                    document.getElementById("demo").innerHTML = colours;
-                    function myFunction() {
-                        // .push() is the main method here which will add colour at the end of the array
-                    colours.push("Green");
-                    document.getElementById("demo").innerHTML = colours;
-                    }
-                </script>
-    </body>
+
+<body>
+    <h2>PROGRAM 12</h2>
+    <p>JavaScript Program to Append an Object to An Array</p>
+    <p>i want to add an element in the given array</p>
+    <p id="demo"></p>
+    <div class="form-group">
+        <label for="numb">Enter element to be removed.</label>
+        <input type="text" class="form-control" id="numb" required>
+    </div>
+    <button type="submit" onclick="myFunction()" class="btn btn-default">check</button>
+    <h4>result: <span id="result"></span></h4>
+    </div>
+    <script>
+        // old one ____________------------------------------
+        var colours = ["Blue", "Orange", "Pink", "Yellow"];
+        document.getElementById("demo").innerHTML = colours;
+        function myFunction() {
+            var n = document.getElementById('numb').value;
+            var a = colours.unshift(n);
+            document.getElementById("result").innerHTML = colours;
+        }
+    </script>
+</body>
+
 </html>
