@@ -3,12 +3,19 @@
     <body>
         <h2>PROGRAM 10</h2>
         <p>JavaScript Program to Check if An Array Contains a Specified Value</p>
-        <p>i wanna check if prateek is here or not</p>
-        <button onclick="myFunction()">click me</button>
+        <p>Enter any name among our team members and see if they are in the array or not.</p>
+        <div class="form-group">
+            <label for="numb">Enter Name</label>
+            <input type="text" class="form-control" id="numb" required>
+        </div>
+        <button type="submit" onclick="myFunction()" class="btn btn-default">check</button>
+        <h4 >result: <span id="result"></span></h4>
+        </div>
         <p id="demo"></p>
         <script>
             function myFunction() {
-                var fruits = ["Surbhi", "Ujwal", "Prateek", "Pradeep"];
+                var fruits = document.getElementById('numb').value;
+                var fruits = ["Surbhi", "Ujwal", "Prateek", "Pradeep"]; 
                 // .includes() is the main method 
                 var n = fruits.includes("Prateek");
 
