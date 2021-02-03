@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html>
-     <body>
-         <h2>PROGRAM 18</h2>
-         <p>JavaScript Program to Format Numbers as Currency Strings</p>
-         <button onclick="myFunction()">Click here!</button> 
-         <p id="demo"></p>
-         <script>
-              let currency= 5000
-    const result =  currency.toLocaleString('en-IN', {
-    style: 'currency',
-    currency: 'INR'
-});
-alert(result);
-document.getElementById("demo").innerHTML = currency;
 
+<body>
+    <h2>PROGRAM 18</h2>
+    <p>JavaScript Program to Format Numbers as Currency Strings</p>
+    <p id="demo"></p>
+    <div class="form-group">
+        <label for="number">Enter number</label>
+        <input type="number" class="form-control" id="numb" required>
+    <button type="submit" onclick=" convertCurrency()" class="btn btn-success"> Click here to see your currency string</button>
+    <h1 id="input1"></h1>
+    <h1 id="result"></h1>
+    </div>
+    <script>
+        function convertCurrency() {
+            let currency = parseInt(document.getElementById("numb").value);
+            const result = currency.toLocaleString('en-IN', {
+                style: 'currency',
+                currency: 'INR'
+            });
+            if (isNaN(currency)) {
+                document.getElementById("result").innerHTML = "Input is invalid"
+            }
+            else {
+                document.getElementById("result").innerHTML = result
+            }
+        }
 
+    </script>
+</body>
 
-
-
-         </script>
-     </body>
 </html>
