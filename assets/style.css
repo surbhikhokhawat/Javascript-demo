@@ -2,45 +2,6 @@
     margin: 0;
     padding: 0;
 }
-
-body,
-html {
-    height: 100%;
-}
-
-.navbar {
-    position: fixed !important;
-    display: block !important;
-    top: 0;
-    width: 100%;
-    background-color: ghostwhite;
-    padding: 25px 50px;
-    z-index: 1000;
-}
-
-.navbar div {
-    float: left;
-    position: fixed;
-}
-
-.navbar ul {
-    list-style-type: none;
-    float: right;
-    margin-right: 10%;
-
-}
-
-.navbar ul li {
-    float: left;
-    padding: 0 15px;
-}
-.hero {
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    margin: 50px auto 10px auto;
-}
-
 .hero h1 {
     line-height: 20px;
     box-sizing: inherit;
@@ -96,7 +57,9 @@ html {
 
 
 
-
+.btn{
+    margin: 20px;
+}
 
 .btn btn-info{
     background-color: #4CAF50;
@@ -110,23 +73,22 @@ html {
     margin: 20px 20px;
     cursor: pointer;
   }
-  h1{
+ h1{
       text-align: center;
       color: gray;
   }
-  .col-md-6 p
+  
+  .note p
   {
-        width: 320px;
         padding:20px;
         border: 5px solid gray;
         margin: 0;
         color: grey;
-      }
-      .h3{
+      } 
+      h3{
           color: green;
       }
       .contact {
-        width: 90%;
         padding-left: 50px;
         margin: 10px, 0;
         font-size: 15px;
@@ -182,7 +144,7 @@ html {
     }
     .contact_img
     {
-        background-color: darkgray;
+        width: 100%;
     }
 
     footer {
